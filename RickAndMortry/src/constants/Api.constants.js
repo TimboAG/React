@@ -7,4 +7,8 @@ export const API_RICK = {
   PERSONAJE_ID: function (id) {
     return `${this.URL}/character/${id}`;
   },
+
+  PERSONAJE_PAGES: function (page) {
+    return `${this.URL}/character/?page=${page}`;
+  },
 };

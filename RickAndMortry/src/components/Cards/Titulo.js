@@ -3,6 +3,7 @@ import {
   RickAndmorty,
   LetraChica,
   LetraGrande,
+  MyH1,
 } from "../../assets/style/ComponentesEstilizados.js";
 
 const Titulo = () => {
@@ -13,7 +14,7 @@ const Titulo = () => {
         <LetraGrande>R</LetraGrande>ick <LetraChica>and</LetraChica>{" "}
         <LetraGrande>M</LetraGrande>orty
       </RickAndmorty>
-      <h1>{subtTitulo}</h1>
+      <MyH1>{subtTitulo}</MyH1>
     </div>
   );
 };

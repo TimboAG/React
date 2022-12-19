@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(28, 28, 28);
 }
 
 .App-logo {
@@ -41,4 +42,29 @@
   font-family: "GetSchwifty";
   src: local("get_schwifty-webfont"),
     url("../src/assets/font/get_schwifty-webfont.woff") format("woff");
+}
+a {
+  color: rgb(4, 182, 222);
+  text-decoration: none;
+}
+.page-link {
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.active > .page-link,
+.page-link.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: #08bae3;
+  border-color: var(--bs-pagination-active-border-color);
 }
