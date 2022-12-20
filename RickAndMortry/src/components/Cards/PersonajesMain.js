@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 // import RickFetch from "../../service/Rick.Fetch";
-import Cards from "./Cards";
+// import Cards from "./Cards";
 import Titulo from "./Titulo";
 import Paginas from "./Paginas";
 import { MI_FETCHS } from "../todoFetch/todoFetch";
+import Buscador from "./Buscador";
 
-export const PersonajesMain = () => {
+const PersonajesMain = () => {
   const [page, setPage] = useState(1);
   const [infoPage, setIntoPage] = useState();
   const [numPage, setNumPage] = useState();
@@ -22,8 +23,8 @@ export const PersonajesMain = () => {
       return (
         <div>
           <Titulo />
-          <Paginas setPage={setPage} numPage={numPage} />
-          <Cards personajes={infoPage} />
+          <Buscador props={infoPage} setPage={setPage} numPage={numPage} />
+          {/* <Paginas setPage={setPage} numPage={numPage} /> */}
         </div>
       );
     }
@@ -86,3 +87,4 @@ export const PersonajesMain = () => {
 
   return <div>{load()}</div>;
 };
+export default PersonajesMain;

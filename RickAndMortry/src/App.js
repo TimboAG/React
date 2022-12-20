@@ -6,7 +6,7 @@ import Detalles from "./components/Cards/Detalles";
 import Temporadas from "./components/Temporadas";
 import SobreSerie from "./components/SobreSerie";
 import { Principal } from "./components/Principal";
-import { PersonajesMain } from "./components/Cards/PersonajesMain";
+import PersonajesMain from "./components/Cards/PersonajesMain";
 
 function App() {
   return (

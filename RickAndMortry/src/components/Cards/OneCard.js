@@ -28,6 +28,7 @@ const OneCard = ({ personaje }) => {
   const classes = useStyles();
 
   const estado = () => {
+    //switch
     if (personaje.status === "Alive") {
       return <MyImagenCirculo src={CiurculoVerde} />;
     } else if (personaje.status === "Dead") {

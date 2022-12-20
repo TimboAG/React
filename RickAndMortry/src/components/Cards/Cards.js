@@ -11,7 +11,7 @@ const Cards = ({ personajes }) => {
     <MyCard>
       <OneCard personaje={p} key={p.id} />{" "}
       <ButtonCard>
-        <VerDetallesCard personaje={p} key={p.index} />
+        <VerDetallesCard personaje={p} key={p.id} />
       </ButtonCard>
     </MyCard>
   ));

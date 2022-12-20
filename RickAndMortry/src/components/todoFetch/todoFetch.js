@@ -17,4 +17,15 @@ export const MI_FETCHS = {
       .catch(console.log);
     return myOne;
   },
+
+  FETCH_POR_NOMBRE: function ({ texto, setPersonajeDetalle }) {
+    const myOne = RickFetch.buscarPorNombrePersonaje(texto)
+      .then((res) => res)
+      .then((res = Response) => {
+        console.log(res.results);
+        setPersonajeDetalle(res.results);
+      })
+      .catch(console.log);
+    return myOne;
+  },
 };

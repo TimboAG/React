@@ -103,3 +103,22 @@ export const ButtonsD = styled.button`
   color: red;
   text-decoration: none;
 `;
+export const MyAlert = styled.div`
+  margin-left: 15%;
+  margin-right: 15%;
+`;
+export const MyBuscador = styled.input`
+  margin-top: 3%;
+  width: 50%;
+  text-align: center;
+  border-color: none;
+  outline: none;
+  box-shadow: 1px 1px 27px #e8e520, 1px 1px 17px #58c147;
+  font-weight: bold;
+  font-size: 1.2em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0 4px 0 4px;
+  margin-bottom: 3%;
+`;

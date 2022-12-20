@@ -11,4 +11,7 @@ export const API_RICK = {
   PERSONAJE_PAGES: function (page) {
     return `${this.URL}/character/?page=${page}`;
   },
+  PERSONAJE_POR_NOMBRE: function (texto) {
+    return `${this.URL}/character/?name=${texto}`;
+  },
 };

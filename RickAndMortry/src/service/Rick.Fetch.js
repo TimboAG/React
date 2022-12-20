@@ -17,6 +17,12 @@ class RickFetch {
     console.log(response);
     return response.json();
   }
+
+  async buscarPorNombrePersonaje(texto) {
+    const response = await fetch(API_RICK.PERSONAJE_POR_NOMBRE(texto));
+    console.log(response);
+    return response.json();
+  }
 }
 
 export default new RickFetch();
