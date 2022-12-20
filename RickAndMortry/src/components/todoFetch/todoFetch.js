@@ -28,4 +28,13 @@ export const MI_FETCHS = {
       .catch(console.log);
     return myOne;
   },
+
+  FETCH_UN_PERSONAJE: function (id, setPersonajeD) {
+    RickFetch.unPersonaje(id)
+      .then((res) => res)
+      .then((res = Response) => {
+        setPersonajeD(res);
+      })
+      .catch(console.log);
+  },
 };

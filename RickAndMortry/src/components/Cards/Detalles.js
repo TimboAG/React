@@ -2,26 +2,22 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { ButtonCard, MyCard } from "../../assets/style/ComponentesEstilizados";
-import RickFetch from "../../service/Rick.Fetch";
+// import RickFetch from "../../service/Rick.Fetch";
 import OneCard from "./OneCard";
 import { Volver } from "./Volver";
+import { MI_FETCHS } from "../todoFetch/todoFetch";
 
 const Detalles = () => {
   const { id } = useParams();
 
   const [personajeD, setPersonajeD] = useState({});
 
-  const fetchPersonajes = async (id) => {
-    RickFetch.unPersonaje(id)
-      .then((res) => res)
-      .then((res = Response) => {
-        setPersonajeD(res);
-      })
-      .catch(console.log);
+  const fetchPersonajes = async (id, setPersonajeD) => {
+    MI_FETCHS.FETCH_UN_PERSONAJE(id, setPersonajeD);
   };
 
   useEffect(() => {
-    fetchPersonajes(id);
+    fetchPersonajes(id, setPersonajeD);
   }, [id]);
 
   console.log("esto es personajeD", personajeD);
