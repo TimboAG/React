@@ -23,6 +23,16 @@ class RickFetch {
     console.log(response);
     return response.json();
   }
+
+  async todosLosEpisodios() {
+    const response = await fetch(API_RICK.EPISODIOS());
+    return response.json();
+  }
+  async pagesEpisodes(id) {
+    const response = await fetch(API_RICK.EPISODIOS_PAGES(id));
+    console.log(response);
+    return response.json();
+  }
 }
 
 export default new RickFetch();

@@ -14,4 +14,11 @@ export const API_RICK = {
   PERSONAJE_POR_NOMBRE: function (texto) {
     return `${this.URL}/character/?name=${texto}`;
   },
+
+  EPISODIOS: function () {
+    return `${this.URL}/episode/`;
+  },
+  EPISODIOS_PAGES: function (pages) {
+    return `${this.URL}/episode/?page=${pages}`;
+  },
 };

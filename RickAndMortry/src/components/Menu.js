@@ -16,7 +16,7 @@ function Menu() {
               <Nav.Link href="/Sobre_la_serie">Sobre la serie</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="/temporadas">Temporadas</Nav.Link>
+              <Nav.Link href="/temporadas">Episodios</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

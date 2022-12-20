@@ -37,4 +37,21 @@ export const MI_FETCHS = {
       })
       .catch(console.log);
   },
+
+  FETCH_NUM_PAGE_EPISODIOS: function ({ setNumPage }) {
+    const myOneOne = RickFetch.todosLosEpisodios()
+      .then((data) => setNumPage(data.info.pages))
+      .catch(console.log);
+    return myOneOne;
+  },
+
+  FETCH_PAGE_EPISODIOS: function ({ pages, setEpisodios }) {
+    const myOne = RickFetch.pagesEpisodes(pages)
+      .then((res) => res)
+      .then((res = Response) => {
+        setEpisodios(res.results);
+      })
+      .catch(console.log);
+    return myOne;
+  },
 };
