@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 // import RickFetch from "../../service/Rick.Fetch";
 // import Cards from "./Cards";
 import Titulo from "./Titulo";
-import Paginas from "./Paginas";
-import { MI_FETCHS } from "../todoFetch/todoFetch";
+import { MI_FETCHS } from "../../constants/todoFetch/todoFetch";
 import Buscador from "./Buscador";
 
 const PersonajesMain = () => {
@@ -24,7 +23,6 @@ const PersonajesMain = () => {
         <div>
           <Titulo />
           <Buscador props={infoPage} setPage={setPage} numPage={numPage} />
-          {/* <Paginas setPage={setPage} numPage={numPage} /> */}
         </div>
       );
     }

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Cards from "./Cards";
-import { MI_FETCHS } from "../todoFetch/todoFetch";
+import { MI_FETCHS } from "../../constants/todoFetch/todoFetch";
 import Paginas from "./Paginas";
 import { MyAlert, MyBuscador } from "../../assets/style/ComponentesEstilizados";
 import Alert from "@mui/material/Alert";
